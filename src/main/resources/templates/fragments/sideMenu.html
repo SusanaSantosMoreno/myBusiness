@@ -1,0 +1,93 @@
+<nav id="sidebar" th:fragment="sideMenu">
+    <div class="sidebar-header">
+        <span><i class='bx bx-badge-check bx-md'></i> MY BUSINESS</span>
+    </div>
+
+    <ul class="list-unstyled components">
+        <span class="ml-3">GENERAL</span>
+        <li class="active">
+            <a th:href="@{/home}"><i class='bx bx-home bx-xs mr-2'></i>Home</a>
+        </li>
+        <li>
+            <a href="#secretarioSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                    class='bx bx-blanket mr-2'></i>Secretarios</a>
+            <ul class="collapse list-unstyled" id="secretarioSubmenu">
+                <li>
+                    <a th:href="@{/altaSecretario}"><i class='bx bx-user-plus mr-2'></i>Dar de alta</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-edit-alt mr-2'></i>Modificar</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-user-minus mr-2'></i>Dar de baja</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#vendedorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                    class='bx bx-coin-stack mr-2'></i>Vendedores</a>
+            <ul class="collapse list-unstyled" id="vendedorSubmenu">
+                <li>
+                    <a href="#"><i class='bx bx-user-plus mr-2'></i>Dar de alta</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-edit-alt mr-2'></i>Modificar</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-user-minus mr-2'></i>Dar de baja</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-repeat mr-2'></i>Cambiar Secretario</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bxs-car-crash mr-2'></i>Cambiar Coche</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#jefeZonaSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> <i
+                    class='bx bx-shape-polygon mr-2'></i>Jefes de Zona</a>
+            <ul class="collapse list-unstyled" id="jefeZonaSubmenu">
+                <li>
+                    <a href="#"><i class='bx bx-user-plus mr-2'></i>Dar de alta</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-edit-alt mr-2'></i>Modificar</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-user-minus mr-2'></i>Dar de baja</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#clienteSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                    class='bx bxs-group mr-2'></i>Clientes</a>
+            <ul class="collapse list-unstyled" id="clienteSubmenu">
+                <li>
+                    <a href="#"><i class='bx bx-user-plus mr-2'></i>Dar de alta</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-edit-alt mr-2'></i>Modificar</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-user-minus mr-2'></i>Dar de baja</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#cocheSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                    class='bx bx-car mr-2'></i>Coches de Empresa</a>
+            <ul class="collapse list-unstyled" id="cocheSubmenu">
+                <li>
+                    <a href="#"><i class='bx bx-user-plus mr-2'></i>Dar de alta</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-edit-alt mr-2'></i>Modificar</a>
+                </li>
+                <li>
+                    <a href="#"><i class='bx bx-user-minus mr-2'></i>Dar de baja</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

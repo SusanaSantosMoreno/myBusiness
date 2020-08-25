@@ -1,0 +1,46 @@
+<head lang="en" th:replace="/fragments/header"></head>
+<link th:href="@{css/pages/home.css}" 
+    href="../../static/css/pages/home.css" rel="stylesheet" type="text/css"/>
+<div class="wrapper">
+    <div th:replace="/fragments/sideMenu"></div>
+    <div id="content">
+        <div th:replace="/fragments/topMenu"></div>
+        <div class="row ml-1 mr-1">
+            <!--SECRETARIOS-->
+            <div class="col card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Secretarios</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item" th:each="secretario : ${listaSecretarios}">
+                      <span th:text="${secretario.dni}"></span><br>
+                      <span th:text="${secretario.nombre} + ' ' + ${secretario.apellidos}"></span>
+                      <small th:text="${secretario.despacho}" class="form-text text-muted"></small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--JEFES DE ZONA-->
+              <div class="col card ml-3" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Jefes de Zona</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item"><strong>Signature
+                        Accommodations</strong>(1480m)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--VENDEDORES-->
+              <div class="col card ml-3" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Vendedores</h5>
+                  <ul class="list-group">
+                    <li class="list-group-item"><strong>Signature
+                        Accommodations</strong>(1480m)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
